@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vrushali Kanavadey · Assistant Professor · Portfolio</title>
+    <!-- SEO -->
+    <meta name="description" content="Vrushali Manohar Kanavadey – Assistant Professor, Subject Matter Expert, Computer Engineering. Portfolio, research, experience & publications." />
+    <meta name="keywords" content="Assistant Professor, Computer Engineering, Subject Matter Expert, Pune, AISSMS" />
+    <meta name="author" content="Vrushali Manohar Kanavadey" />
+    <meta name="theme-color" content="#1e293b" />
+    <link rel="canonical" href="https://yourdomain.com" />
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎓</text></svg>" />
+
+    <!-- Fonts & Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+    <!-- ===== PRELOADER ===== -->
+    <div id="preloader">
+        <div class="loader"></div>
+    </div>
+
+    <!-- ===== STICKY NAVIGATION ===== -->
+    <nav id="navbar">
+        <div class="container nav-inner">
+            <div class="nav-logo">
+                <i class="fas fa-graduation-cap"></i>
+                <span>VMK</span>
+            </div>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#research">Research</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li>
+                    <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- ===== HERO / HOME ===== -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-wrapper">
+                <div class="hero-content">
+                    <div class="hero-badge">
+                        <i class="fas fa-user-graduate"></i> Assistant Professor
+                    </div>
+                    <h1>Vrushali <span>Kanavadey</span></h1>
+                    <p>Computer Science Educator · Subject Matter Expert · Network Administrator</p>
+                    <div class="hero-stats">
+                        <div>
+                            <div class="num" data-count="7">0</div>
+                            <div class="label">Years Teaching</div>
+                        </div>
+                        <div>
+                            <div class="num" data-count="500">0</div>
+                            <div class="label">+ Connections</div>
+                        </div>
+                        
+                        <div>
+                            <div class="num" data-count="1000">0</div>
+                            <div class="label">+ Students Mentored</div>
+                        </div>
+                    </div>
+                    <div class="btn-group">
+                        <!-- These buttons scroll to sections, NOT LinkedIn -->
+                        <button onclick="scrollToSection('contact')" class="btn btn-primary">
+                            <i class="fas fa-paper-plane"></i> Say Hello
+                        </button>
+                        <button onclick="scrollToSection('about')" class="btn btn-outline">
+                            <i class="fas fa-user"></i> About Me
+                        </button>
+                        <!-- Only this button goes to LinkedIn -->
+                        <a href="https://linkedin.com/in/vrushali-manohar-kanavadey-54b317132" target="_blank" class="btn btn-outline">
+                            <i class="fab fa-linkedin"></i> LinkedIn
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="avatar-wrapper">
+                        <div class="avatar" id="avatarDisplay">
+                            <!-- ===== PROFILE IMAGE - REPLACE 'your-photo.jpg' WITH YOUR IMAGE PATH ===== -->
+                            <img id="profilePhoto" src="kanavdemam.png" alt="Vrushali Kanavadey - Assistant Professor" style="width:100%; height:100%; object-fit:cover; border-radius:50%;" />
+                            
+                            <!-- Fallback default avatar (hidden when image is loaded) -->
+                            <i class="fas fa-user-circle" id="defaultAvatar" style="display:none;"></i>
+                            
+                            <!-- Upload overlay - hover over avatar to see it -->
+                            <div class="photo-upload-overlay" onclick="document.getElementById('photoUpload').click()">
+                                <i class="fas fa-camera"></i>
+                                <span>Change Photo</span>
+                            </div>
+                            <input type="file" id="photoUpload" accept="image/*" style="display:none;" />
+                        </div>
+                        <div class="avatar-ring"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== ABOUT ===== -->
+    <section id="about" class="section reveal">
+        <div class="container">
+            <div class="section-header">
+                <h2><i class="fas fa-user"></i> About Me</h2>
+                <p>Passionate educator and technology professional</p>
+            </div>
+            <div class="about-grid">
+                <div class="about-text glass">
+                    <p>Currently working as <strong>Assistant Professor</strong> in the Computer Department at <strong>AISSMS College of Engineering, Pune</strong>. Previously served as a Lecturer at Cusrow Wadia Institute of Technology.</p>
+                    <p>As a <strong>Subject Matter Expert</strong> at Chegg Inc., I've helped thousands of US students with Computer Programming questions. My professional journey includes roles as Network Administrator at SGM Group and Associate at Wipro Limited.</p>
+                    <p>I'm deeply passionate about <strong>software development, network security, and education</strong>. I believe in making complex technical concepts accessible to all learners.</p>
+                    <div class="about-info">
+                        <div><i class="fas fa-map-pin"></i> Pune, Maharashtra, India</div>
+                        <div><i class="fas fa-envelope"></i> vmkanavade@aissmscoe.com</div>
+                        <div><i class="fas fa-phone"></i> +91 86230 76325</div>
+                        <div><i class="fas fa-calendar-alt"></i> MTech, Computer Engineering</div>
+                    </div>
+                </div>
+                <div class="about-cards">
+                    <div class="stat-card glass">
+                        <i class="fas fa-chalkboard-teacher"></i>
+                        <h3>7+</h3>
+                        <p>Years of Teaching</p>
+                    </div>
+                    <div class="stat-card glass">
+                        <i class="fas fa-users"></i>
+                        <h3>1000+</h3>
+                        <p>Students Mentored</p>
+                    </div>
+                    
+                    <div class="stat-card glass">
+                        <i class="fas fa-globe"></i>
+                        <h3>10+</h3>
+                        <p>Projects Delivered</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== EXPERIENCE ===== -->
+    <section id="experience" class="section reveal">
+        <div class="container">
+            <div class="section-header">
+                <h2><i class="fas fa-briefcase"></i> Experience</h2>
+                <p>My professional journey in academia and industry</p>
+            </div>
+            <div class="timeline glass">
+                <div class="timeline-item">
+                    <div class="timeline-icon"><i class="fas fa-chalkboard-teacher"></i></div>
+                    <div class="timeline-content">
+                        <h4>Assistant Professor</h4>
+                        <div class="meta">AISSMS College of Engineering · Aug 2024 – Present</div>
+                        <p>Teaching computer science courses, mentoring students, and conducting research in AI and network security.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-icon"><i class="fas fa-chalkboard"></i></div>
+                    <div class="timeline-content">
+                        <h4>Lecturer</h4>
+                        <div class="meta">Cusrow Wadia Institute of Technology · Feb 2022 – Jul 2024</div>
+                        <p>Delivered lectures in programming, databases, and networking. Developed curriculum and conducted workshops.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-icon"><i class="fas fa-laptop-code"></i></div>
+                    <div class="timeline-content">
+                        <h4>Subject Matter Expert</h4>
+                        <div class="meta">Chegg Inc. · 2019 – Jun 2024 · Freelance</div>
+                        <p>Provided expert solutions to US students in Computer Programming, Data Structures, Algorithms, and Web Development.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-icon"><i class="fas fa-network-wired"></i></div>
+                    <div class="timeline-content">
+                        <h4>Senior Associate – Network Administrator</h4>
+                        <div class="meta">SGM Group · Feb 2019 – Feb 2022</div>
+                        <p>Managed network infrastructure, ensured security compliance, troubleshooted network issues, and maintained software systems.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-icon"><i class="fas fa-code"></i></div>
+                    <div class="timeline-content">
+                        <h4>Associate</h4>
+                        <div class="meta">Wipro Limited · Feb 2018 – 2019</div>
+                        <p>Worked on software development projects, gained industry experience, and developed professional skills.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== EDUCATION ===== -->
+    <section id="education" class="section reveal">
+        <div class="container">
+            <div class="section-header">
+                <h2><i class="fas fa-graduation-cap"></i> Education</h2>
+                <p>My academic qualifications and certifications</p>
+            </div>
+            <div class="education-grid">
+                <div class="edu-card glass">
+                    <div class="edu-icon"><i class="fas fa-university"></i></div>
+                    <h4>Master of Technology (MTech)</h4>
+                    <p class="edu-meta">Computer Engineering</p>
+                    <p class="edu-school">Vishwakarma Institute of Technology</p>
+                    <p class="edu-grade">Grade: First Class with Distinction (8.61 CGPA)</p>
+                </div>
+                <div class="edu-card glass">
+                    <div class="edu-icon"><i class="fas fa-university"></i></div>
+                    <h4>Bachelor of Engineering (BE)</h4>
+                    <p class="edu-meta">Computer Engineering</p>
+                    <p class="edu-school">Savitribai Phule Pune University</p>
+                    <p class="edu-grade">Grade: Distinction</p>
+                </div>
+                <div class="edu-card glass">
+                    <div class="edu-icon"><i class="fas fa-certificate"></i></div>
+                    <h4>Web Development</h4>
+                    <p class="edu-meta">Full Stack Web Development</p>
+                    <p class="edu-school">BitCode Technologies Pvt. Ltd.</p>
+                    <p class="edu-grade">Professional Certification</p>
+                </div>
+                <div class="edu-card glass">
+                    <div class="edu-icon"><i class="fas fa-robot"></i></div>
+                    <h4>Generative AI Workshop</h4>
+                    <p class="edu-meta">AI for Students</p>
+                    <p class="edu-school">NXT WAVE · Oct 2023</p>
+                    <p class="edu-grade">Certificate of Participation</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== SKILLS ===== -->
+    <section id="skills" class="section reveal">
+        <div class="container">
+            <div class="section-header">
+                <h2><i class="fas fa-cogs"></i> Skills & Expertise</h2>
+                <p>Technical skills and professional competencies</p>
+            </div>
+            <div class="skills-wrapper glass">
+                <div class="skill-category">
+                    <h4><i class="fas fa-code"></i> Programming Languages</h4>
+                    <div class="skill-tags">
+                        <span class="skill-tag"><i class="fab fa-java"></i> Java</span>
+                        <span class="skill-tag"><i class="fab fa-js"></i> JavaScript</span>
+                        <span class="skill-tag"><i class="fas fa-code"></i> C++</span>
+                        <span class="skill-tag"><i class="fab fa-php"></i> PHP</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h4><i class="fas fa-database"></i> Databases</h4>
+                    <div class="skill-tags">
+                        <span class="skill-tag"><i class="fas fa-database"></i> MySQL</span>
+                        <span class="skill-tag"><i class="fas fa-database"></i> Microsoft SQL Server</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h4><i class="fas fa-code-branch"></i> Web Technologies</h4>
+                    <div class="skill-tags">
+                        <span class="skill-tag"><i class="fab fa-angular"></i> AngularJS</span>
+                        <span class="skill-tag"><i class="fab fa-bootstrap"></i> Bootstrap</span>
+                        <span class="skill-tag"><i class="fab fa-css3"></i> CSS3</span>
+                        <span class="skill-tag"><i class="fab fa-html5"></i> HTML5</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h4><i class="fas fa-network-wired"></i> Networking</h4>
+                    <div class="skill-tags">
+                        <span class="skill-tag"><i class="fas fa-network-wired"></i> Network Administration</span>
+                        <span class="skill-tag"><i class="fas fa-shield-alt"></i> VPN</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h4><i class="fas fa-tools"></i> Tools & Platforms</h4>
+                    <div class="skill-tags">
+                        <span class="skill-tag"><i class="fab fa-git-alt"></i> Git</span>
+                        <span class="skill-tag"><i class="fab fa-github"></i> GitHub</span>
+                        <span class="skill-tag"><i class="fas fa-pen-fancy"></i> Content Writing</span>
+                        <span class="skill-tag"><i class="fas fa-language"></i> Japanese Translation</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h4><i class="fas fa-users"></i> Interpersonal</h4>
+                    <div class="skill-tags">
+                        <span class="skill-tag"><i class="fas fa-users"></i> Leadership</span>
+                        <span class="skill-tag"><i class="fas fa-tasks"></i> Management</span>
+                        <span class="skill-tag"><i class="fas fa-project-diagram"></i> Engineering</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== RESEARCH ===== -->
+    <section id="research" class="section reveal">
+        <div class="container">
+            <div class="section-header">
+                <h2><i class="fas fa-microscope"></i> Research & Publications</h2>
+                <p>Research interests and professional highlights</p>
+            </div>
+            <div class="research-grid">
+                <div class="pub-card glass">
+                    <div class="pub-icon"><i class="fas fa-certificate"></i></div>
+                    <h4>Generative AI Workshop</h4>
+                    <div class="pub-meta">NXT WAVE · Oct 2023</div>
+                    <p>"AI for Students: Build Your Own Generative AI Model" conducted by IIT Delhi alumnus.</p>
+                </div>
+                <div class="pub-card glass">
+                    <div class="pub-icon"><i class="fas fa-globe"></i></div>
+                    <h4>Web Development Certification</h4>
+                    <div class="pub-meta">BitCode Technologies</div>
+                    <p>Full-stack web development with modern frameworks and technologies.</p>
+                </div>
+                <div class="pub-card glass">
+                    <div class="pub-icon"><i class="fas fa-shield-alt"></i></div>
+                    <h4>Network Security Research</h4>
+                    <div class="pub-meta">SGM Group · 3+ years</div>
+                    <p>Implemented enterprise network security protocols and performance optimization.</p>
+                </div>
+                <div class="pub-card glass">
+                    <div class="pub-icon"><i class="fas fa-book-open"></i></div>
+                    <h4>Programming Education</h4>
+                    <div class="pub-meta">Chegg Inc. · 5+ years</div>
+                    <p>Answered 1000+ programming questions, authored educational content for US students.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CONTACT ===== -->
+    <section id="contact" class="section reveal">
+        <div class="container">
+            <div class="section-header">
+                <h2><i class="fas fa-envelope"></i> Get In Touch</h2>
+                <p>Have a question or want to collaborate? Reach out to me.</p>
+            </div>
+            <div class="contact-wrapper">
+                <div class="contact-info glass">
+                    <h4>Contact Information</h4>
+                    <div class="contact-detail">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h5>Location</h5>
+                            <p>Pune, Maharashtra, India</p>
+                        </div>
+                    </div>
+                    <div class="contact-detail">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h5>Email</h5>
+                            <p>vmkanavade@aissmscoe.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-detail">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h5>Phone</h5>
+                            <p>+91 86230 76325</p>
+                        </div>
+                    </div>
+                    <div class="contact-social">
+                        <a href="https://linkedin.com/in/vrushali-manohar-kanavadey-54b317132" target="_blank" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        
+                    </div>
+                </div>
+                <form class="contact-form glass" id="contactForm">
+                    <h4>Send Me a Message</h4>
+                    <div class="form-group">
+                        <input type="text" id="name" placeholder="Your Name" required />
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" placeholder="Your Email" required />
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="subject" placeholder="Subject" required />
+                        <i class="fas fa-tag"></i>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" rows="5" placeholder="Your Message..." required></textarea>
+                        <i class="fas fa-comment"></i>
+                    </div>
+                    <button type="submit" class="btn btn-primary">
+                        <i class="fas fa-paper-plane"></i> Send Message
+                    </button>
+                    <div id="formStatus" class="form-status"></div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer>
+        <div class="container">
+            <p>© 2026 Vrushali Kanavadey · Assistant Professor · AISSMS COE Pune</p>
+            <p class="footer-love">Built with <i class="fas fa-heart"></i> using modern web technologies</p>
+        </div>
+    </footer>
+
+    <!-- ===== SCRIPTS ===== -->
+    <script src="script.js"></script>
+</body>
+</html>
