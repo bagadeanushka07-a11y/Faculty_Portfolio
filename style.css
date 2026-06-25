@@ -944,70 +944,6 @@ nav.scrolled {
     margin-top: 8px;
 }
 
-/* ===== PERSONAL RESEARCH ===== */
-.personal-research-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    gap: 30px;
-}
-
-.research-card {
-    padding: 28px 24px;
-    transition: var(--transition);
-}
-
-.research-card:hover {
-    transform: translateY(-5px);
-}
-
-.research-icon {
-    font-size: 2.2rem;
-    color: var(--primary);
-    margin-bottom: 12px;
-}
-
-.research-card h4 {
-    font-size: 1.1rem;
-    font-weight: 700;
-    margin-bottom: 4px;
-}
-
-.research-card .research-meta {
-    color: var(--primary);
-    font-weight: 500;
-    font-size: 0.85rem;
-    margin-bottom: 8px;
-}
-
-.research-card .research-desc {
-    color: var(--text-secondary);
-    font-size: 0.95rem;
-    margin-bottom: 12px;
-    line-height: 1.5;
-}
-
-.research-tags {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 6px;
-}
-
-.research-tags span {
-    display: inline-block;
-    background: rgba(37, 99, 235, 0.08);
-    color: var(--text-secondary);
-    padding: 3px 14px;
-    border-radius: 20px;
-    font-size: 0.75rem;
-    font-weight: 500;
-    transition: var(--transition);
-}
-
-.research-tags span:hover {
-    background: var(--primary);
-    color: white;
-}
-
 /* ===== SKILLS ===== */
 .skills-wrapper {
     padding: 32px;
@@ -1192,6 +1128,28 @@ nav.scrolled {
     font-weight: 500;
 }
 
+/* ===== EMAIL LINK STYLES ===== */
+.email-link {
+    color: var(--text-secondary);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.email-link:hover {
+    color: var(--primary);
+    text-decoration: underline;
+}
+
+/* Contact detail email */
+.contact-detail .email-link {
+    font-size: 0.95rem;
+}
+
+/* About info email */
+.about-info .email-link {
+    font-size: 0.9rem;
+}
+
 /* ===== FOOTER ===== */
 footer {
     background: var(--surface);
@@ -1351,10 +1309,6 @@ footer .footer-love i {
         grid-template-columns: 1fr;
     }
     
-    .personal-research-grid {
-        grid-template-columns: 1fr;
-    }
-    
     .prof-dev-grid {
         grid-template-columns: 1fr;
     }
@@ -1459,10 +1413,6 @@ footer .footer-love i {
     }
     
     .subject-card {
-        padding: 20px;
-    }
-    
-    .research-card {
         padding: 20px;
     }
     
