@@ -43,8 +43,12 @@
                 <li><a href="#about">About</a></li>
                 <li><a href="#experience">Experience</a></li>
                 <li><a href="#education">Education</a></li>
-                <li><a href="#skills">Skills</a></li>
+                <li><a href="#subjects">Subjects</a></li>
+                <li><a href="#professional-dev">Prof. Dev</a></li>
+                <li><a href="#resources">Resources</a></li>
+                <li><a href="#blog">Blog</a></li>
                 <li><a href="#research">Research</a></li>
+                <li><a href="#skills">Skills</a></li>
                 <li><a href="#contact">Contact</a></li>
                 <li>
                     <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
@@ -74,21 +78,18 @@
                             <div class="num" data-count="500">0</div>
                             <div class="label">+ Connections</div>
                         </div>
-                        
                         <div>
                             <div class="num" data-count="1000">0</div>
                             <div class="label">+ Students Mentored</div>
                         </div>
                     </div>
                     <div class="btn-group">
-                        <!-- These buttons scroll to sections, NOT LinkedIn -->
                         <button onclick="scrollToSection('contact')" class="btn btn-primary">
                             <i class="fas fa-paper-plane"></i> Say Hello
                         </button>
                         <button onclick="scrollToSection('about')" class="btn btn-outline">
                             <i class="fas fa-user"></i> About Me
                         </button>
-                        <!-- Only this button goes to LinkedIn -->
                         <a href="https://linkedin.com/in/vrushali-manohar-kanavadey-54b317132" target="_blank" class="btn btn-outline">
                             <i class="fab fa-linkedin"></i> LinkedIn
                         </a>
@@ -97,14 +98,8 @@
                 <div class="hero-image">
                     <div class="avatar-wrapper">
                         <div class="avatar" id="avatarDisplay">
-                            <!-- ===== PROFILE IMAGE - REPLACE 'your-photo.jpg' WITH YOUR IMAGE PATH ===== -->
                             <img id="profilePhoto" src="kanavdemam.png" alt="Vrushali Kanavadey - Assistant Professor" style="width:100%; height:100%; object-fit:cover; border-radius:50%;" />
-                            
-                            <!-- Fallback default avatar (hidden when image is loaded) -->
                             <i class="fas fa-user-circle" id="defaultAvatar" style="display:none;"></i>
-                            
-                            <!-- Upload overlay - hover over avatar to see it -->
-                            
                             <input type="file" id="photoUpload" accept="image/*" style="display:none;" />
                         </div>
                         <div class="avatar-ring"></div>
@@ -129,7 +124,6 @@
                     <div class="about-info">
                         <div><i class="fas fa-map-pin"></i> Pune, Maharashtra, India</div>
                         <div><i class="fas fa-envelope"></i> vmkanavade@aissmscoe.com</div>
-                        <div><i class="fas fa-phone"></i> +91 86230 76325</div>
                         <div><i class="fas fa-calendar-alt"></i> MTech, Computer Engineering</div>
                     </div>
                 </div>
@@ -144,7 +138,6 @@
                         <h3>1000+</h3>
                         <p>Students Mentored</p>
                     </div>
-                    
                     <div class="stat-card glass">
                         <i class="fas fa-globe"></i>
                         <h3>10+</h3>
@@ -247,6 +240,324 @@
         </div>
     </section>
 
+    <!-- ===== SUBJECTS TAUGHT ===== -->
+    <section id="subjects" class="section reveal">
+        <div class="container">
+            <div class="section-header">
+                <h2><i class="fas fa-book"></i> Subjects Taught</h2>
+                <p>Courses for students</p>
+            </div>
+            <div class="subjects-grid">
+                <!-- Database Management Systems (DBMS) -->
+            <div class="subject-card glass">
+                <div class="subject-icon"><i class="fas fa-database"></i></div>
+                <h4>Database Management Systems (DBMS)</h4>
+                <p class="subject-code">CS-302</p>
+                <p class="subject-desc">Fundamentals of database design, SQL queries, normalization, transaction management, and relational database concepts.</p>
+                <div class="subject-topics">
+                    <span class="topic-tag">SQL</span>
+                    <span class="topic-tag">Normalization</span>
+                    <span class="topic-tag">ER Diagrams</span>
+                    <span class="topic-tag">Transactions</span>
+                    <span class="topic-tag">NoSQL</span>
+                    <span class="topic-tag">ACID Properties</span>
+                </div>
+                
+            </div>
+
+            <!-- DSBDA Lab (Data Science & Big Data Analytics Lab) -->
+            <div class="subject-card glass">
+                <div class="subject-icon"><i class="fas fa-chart-bar"></i></div>
+                <h4>DSBDA Lab</h4>
+                <p class="subject-code">CS-303L</p>
+                <p class="subject-desc">Data Science & Big Data Analytics Lab focusing on data analysis, visualization, and big data processing using modern tools.</p>
+                <div class="subject-topics">
+                    <span class="topic-tag">Python</span>
+                    <span class="topic-tag">Data Visualization</span>
+                    <span class="topic-tag">Pandas</span>
+                    <span class="topic-tag">NumPy</span>
+                    <span class="topic-tag">Hadoop</span>
+                    <span class="topic-tag">Spark</span>
+                </div>
+                
+            </div>
+
+            <!-- DELD (Digital Electronics & Logic Design) -->
+            <div class="subject-card glass">
+                <div class="subject-icon"><i class="fas fa-microchip"></i></div>
+                <h4>Digital Electronics & Logic Design (DELD)</h4>
+                <p class="subject-code">CS-304</p>
+                <p class="subject-desc">Foundation of digital electronics, logic gates, combinational and sequential circuits, and digital system design.</p>
+                <div class="subject-topics">
+                    <span class="topic-tag">Logic Gates</span>
+                    <span class="topic-tag">Boolean Algebra</span>
+                    <span class="topic-tag">K-Map</span>
+                    <span class="topic-tag">Flip-Flops</span>
+                    <span class="topic-tag">Counters</span>
+                    <span class="topic-tag">Registers</span>
+                </div>
+                
+            </div>
+
+            <!-- Honours (AI) - Artificial Intelligence -->
+            <div class="subject-card glass">
+                <div class="subject-icon"><i class="fas fa-robot"></i></div>
+                <h4>Honours: Artificial Intelligence (AI)</h4>
+                <p class="subject-code">CS-305H</p>
+                <p class="subject-desc">Advanced study of Artificial Intelligence including machine learning, neural networks, natural language processing, and intelligent systems.</p>
+                <div class="subject-topics">
+                    <span class="topic-tag">Machine Learning</span>
+                    <span class="topic-tag">Neural Networks</span>
+                    <span class="topic-tag">NLP</span>
+                    <span class="topic-tag">Deep Learning</span>
+                    <span class="topic-tag">Search Algorithms</span>
+                    <span class="topic-tag">Expert Systems</span>
+                    <span class="topic-tag">Computer Vision</span>
+                </div>
+                
+            </div>
+
+
+               
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== PROFESSIONAL DEVELOPMENT ===== -->
+    <section id="professional-dev" class="section reveal">
+        <div class="container">
+            <div class="section-header">
+                <h2><i class="fas fa-chart-line"></i> Professional Development</h2>
+                <p>Faculty Development Programs, NPTEL Courses, and Workshops Attended</p>
+            </div>
+            <div class="prof-dev-grid">
+                <div class="prof-card glass">
+                    <div class="prof-icon"><i class="fas fa-users-cog"></i></div>
+                    <h4>Faculty Development Programs</h4>
+                    <div class="prof-list">
+                        
+                        <div class="prof-item">
+                            <span class="prof-date">2023</span>
+                            <p>FDP on "Outcome Based Education" - AISSMS COE</p>
+                        </div>
+                        <div class="prof-item">
+                            <span class="prof-date">2022</span>
+                            <p>FDP on "Research Methodology" - Pune University</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="prof-card glass">
+                    <div class="prof-icon"><i class="fas fa-certificate"></i></div>
+                    <h4>NPTEL Courses Completed</h4>
+                    <div class="prof-list">
+                        <div class="prof-item">
+                            <span class="prof-date">2024</span>
+                            <p>Data Science for Engineers - Elite + Silver</p>
+                        </div>                        
+                        <div class="prof-item">
+                            <span class="prof-date">2022</span>
+                            <p>Programming in Java - Elite</p>
+                        </div>
+                        
+                    </div>
+                </div>
+
+                <div class="prof-card glass">
+                    <div class="prof-icon"><i class="fas fa-chalkboard-teacher"></i></div>
+                    <h4>Workshops Attended</h4>
+                    <div class="prof-list">
+                        <div class="prof-item">
+                            <span class="prof-date">2024</span>
+                            <p>Generative AI Workshop - NXT WAVE</p>
+                        </div>
+                        <div class="prof-item">
+                            <span class="prof-date">2023</span>
+                            <p>Python for Data Science - Spoken Tutorial</p>
+                        </div>
+                        <div class="prof-item">
+                            <span class="prof-date">2022</span>
+                            <p>Web Development Workshop - BitCode Technologies</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== STUDENT RESOURCES ===== -->
+    <section id="resources" class="section reveal">
+        <div class="container">
+            <div class="section-header">
+                <h2><i class="fas fa-download"></i> Resources for Students</h2>
+                <p>Lecture notes, PPTs, Question Banks</p>
+            </div>
+            <div class="resources-grid">
+                <div class="resource-card glass">
+                    <div class="resource-icon"><i class="fas fa-file-alt"></i></div>
+                    <h4>Lecture Notes</h4>
+                    <p>Comprehensive notes for all subjects</p>
+                    <div class="resource-links">
+                        <a href="#" class="resource-link"><i class="fas fa-file-pdf"></i> DBMS Notes</a>
+                        <a href="#" class="resource-link"><i class="fas fa-file-pdf"></i> Deld Notes</a>
+                        
+                        <a href="#" class="resource-link"><i class="fas fa-file-pdf"></i> DSBDAL Notes</a>
+                        <a href="#" class="resource-link"><i class="fas fa-file-pdf"></i> Honours Notes</a>
+                    </div>
+                </div>
+
+                <div class="resource-card glass">
+                    <div class="resource-icon"><i class="fas fa-file-powerpoint"></i></div>
+                    <h4>PPTs / Presentations</h4>
+                    <p>Lecture presentations for each subject</p>
+                    <div class="resource-links">
+                        <a href="#" class="resource-link"><i class="fas fa-file-powerpoint"></i> DBMS PPTs</a>
+                        <a href="#" class="resource-link"><i class="fas fa-file-powerpoint"></i> Deld PPTs</a>
+                        
+                        <a href="#" class="resource-link"><i class="fas fa-file-powerpoint"></i> Honours PPTs</a>
+                    </div>
+                </div>
+
+                <div class="resource-card glass">
+                    <div class="resource-icon"><i class="fas fa-question-circle"></i></div>
+                    <h4>Question Banks</h4>
+                    <p>Practice questions for exam preparation</p>
+                    <div class="resource-links">
+                        <a href="#" class="resource-link"><i class="fas fa-file-pdf"></i> DBMS QB</a>
+                        <a href="#" class="resource-link"><i class="fas fa-file-pdf"></i> Deld QB</a>
+                        <a href="#" class="resource-link"><i class="fas fa-file-pdf"></i> Honours QB</a>
+                        
+                    </div>
+                </div>
+
+                <div class="resource-card glass">
+                    <div class="resource-icon"><i class="fas fa-flask"></i></div>
+                    <h4>Lab Manuals</h4>
+                    <p>Practical lab manuals and assignments</p>
+                    <div class="resource-links">
+                        <a href="#" class="resource-link"><i class="fas fa-file-pdf"></i> DSBDA Lab</a>                       
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== BLOG SECTION ===== -->
+    <section id="blog" class="section reveal">
+        <div class="container">
+            <div class="section-header">
+                <h2><i class="fas fa-blog"></i> Blog & Insights</h2>
+                <p>Recent trends and thoughts on technology and education</p>
+            </div>
+            <div class="blog-grid">
+                <div class="blog-card glass">
+                    <div class="blog-date">June 2026</div>
+                    <div class="blog-icon"><i class="fas fa-robot"></i></div>
+                    <h4>Generative AI in Education</h4>
+                    <p>Exploring how generative AI is transforming the education landscape and enhancing student learning experiences.</p>
+                    <div class="blog-tags">
+                        <span>AI</span>
+                        <span>Education</span>
+                        <span>Technology</span>
+                    </div>
+                    <a href="#" class="btn btn-outline btn-sm">Read More</a>
+                </div>
+
+                <div class="blog-card glass">
+                    <div class="blog-date">May 2026</div>
+                    <div class="blog-icon"><i class="fas fa-shield-alt"></i></div>
+                    <h4>Cybersecurity Trends for 2026</h4>
+                    <p>Understanding emerging cybersecurity threats and how educators can prepare students for the future.</p>
+                    <div class="blog-tags">
+                        <span>Cybersecurity</span>
+                        <span>Trends</span>
+                        <span>Education</span>
+                    </div>
+                    <a href="#" class="btn btn-outline btn-sm">Read More</a>
+                </div>
+
+                <div class="blog-card glass">
+                    <div class="blog-date">April 2026</div>
+                    <div class="blog-icon"><i class="fas fa-code"></i></div>
+                    <h4>Teaching Programming in the AI Era</h4>
+                    <p>Adapting programming pedagogy for a world where AI assistants like ChatGPT are ubiquitous.</p>
+                    <div class="blog-tags">
+                        <span>Programming</span>
+                        <span>AI</span>
+                        <span>Teaching</span>
+                    </div>
+                    <a href="#" class="btn btn-outline btn-sm">Read More</a>
+                </div>
+
+                <div class="blog-card glass">
+                    <div class="blog-date">March 2026</div>
+                    <div class="blog-icon"><i class="fas fa-network-wired"></i></div>
+                    <h4>Network Security Best Practices</h4>
+                    <p>Essential security practices for modern networks and how to implement them effectively.</p>
+                    <div class="blog-tags">
+                        <span>Networking</span>
+                        <span>Security</span>
+                        <span>Best Practices</span>
+                    </div>
+                    <a href="#" class="btn btn-outline btn-sm">Read More</a>
+                </div>
+
+                <div class="blog-card glass">
+                    <div class="blog-date">February 2026</div>
+                    <div class="blog-icon"><i class="fas fa-graduation-cap"></i></div>
+                    <h4>Outcome-Based Education Strategies</h4>
+                    <p>Implementing effective OBE strategies in computer science education for better student outcomes.</p>
+                    <div class="blog-tags">
+                        <span>OBE</span>
+                        <span>Education</span>
+                        <span>Strategies</span>
+                    </div>
+                    <a href="#" class="btn btn-outline btn-sm">Read More</a>
+                </div>
+
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== RESEARCH & PUBLICATIONS ===== -->
+    <section id="research" class="section reveal">
+        <div class="container">
+            <div class="section-header">
+                <h2><i class="fas fa-microscope"></i> Research & Publications</h2>
+                <p>Research interests and professional highlights</p>
+            </div>
+            <div class="research-grid">
+                <div class="pub-card glass">
+                    <div class="pub-icon"><i class="fas fa-certificate"></i></div>
+                    <h4>Generative AI Workshop</h4>
+                    <div class="pub-meta">NXT WAVE · Oct 2023</div>
+                    <p>"AI for Students: Build Your Own Generative AI Model" conducted by IIT Delhi alumnus.</p>
+                </div>
+                <div class="pub-card glass">
+                    <div class="pub-icon"><i class="fas fa-globe"></i></div>
+                    <h4>Web Development Certification</h4>
+                    <div class="pub-meta">BitCode Technologies</div>
+                    <p>Full-stack web development with modern frameworks and technologies.</p>
+                </div>
+                <div class="pub-card glass">
+                    <div class="pub-icon"><i class="fas fa-shield-alt"></i></div>
+                    <h4>Network Security Research</h4>
+                    <div class="pub-meta">SGM Group · 3+ years</div>
+                    <p>Implemented enterprise network security protocols and performance optimization.</p>
+                </div>
+                <div class="pub-card glass">
+                    <div class="pub-icon"><i class="fas fa-book-open"></i></div>
+                    <h4>Programming Education</h4>
+                    <div class="pub-meta">Chegg Inc. · 5+ years</div>
+                    <p>Answered 1000+ programming questions, authored educational content for US students.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   
+
     <!-- ===== SKILLS ===== -->
     <section id="skills" class="section reveal">
         <div class="container">
@@ -308,48 +619,12 @@
         </div>
     </section>
 
-    <!-- ===== RESEARCH ===== -->
-    <section id="research" class="section reveal">
-        <div class="container">
-            <div class="section-header">
-                <h2><i class="fas fa-microscope"></i> Research & Publications</h2>
-                <p>Research interests and professional highlights</p>
-            </div>
-            <div class="research-grid">
-                <div class="pub-card glass">
-                    <div class="pub-icon"><i class="fas fa-certificate"></i></div>
-                    <h4>Generative AI Workshop</h4>
-                    <div class="pub-meta">NXT WAVE · Oct 2023</div>
-                    <p>"AI for Students: Build Your Own Generative AI Model" conducted by IIT Delhi alumnus.</p>
-                </div>
-                <div class="pub-card glass">
-                    <div class="pub-icon"><i class="fas fa-globe"></i></div>
-                    <h4>Web Development Certification</h4>
-                    <div class="pub-meta">BitCode Technologies</div>
-                    <p>Full-stack web development with modern frameworks and technologies.</p>
-                </div>
-                <div class="pub-card glass">
-                    <div class="pub-icon"><i class="fas fa-shield-alt"></i></div>
-                    <h4>Network Security Research</h4>
-                    <div class="pub-meta">SGM Group · 3+ years</div>
-                    <p>Implemented enterprise network security protocols and performance optimization.</p>
-                </div>
-                <div class="pub-card glass">
-                    <div class="pub-icon"><i class="fas fa-book-open"></i></div>
-                    <h4>Programming Education</h4>
-                    <div class="pub-meta">Chegg Inc. · 5+ years</div>
-                    <p>Answered 1000+ programming questions, authored educational content for US students.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <!-- ===== CONTACT ===== -->
     <section id="contact" class="section reveal">
         <div class="container">
             <div class="section-header">
                 <h2><i class="fas fa-envelope"></i> Get In Touch</h2>
-                <p>Have a question or want to collaborate? Reach out to me.</p>
+                <p>Have a question ? Reach out to me.</p>
             </div>
             <div class="contact-wrapper">
                 <div class="contact-info glass">
@@ -368,17 +643,11 @@
                             <p>vmkanavade@aissmscoe.com</p>
                         </div>
                     </div>
-                    <div class="contact-detail">
-                        <i class="fas fa-phone"></i>
-                        <div>
-                            <h5>Phone</h5>
-                            <p>+91 86230 76325</p>
-                        </div>
-                    </div>
                     <div class="contact-social">
                         <a href="https://linkedin.com/in/vrushali-manohar-kanavadey-54b317132" target="_blank" aria-label="LinkedIn">
                             <i class="fab fa-linkedin"></i>
                         </a>
+                        
                         
                     </div>
                 </div>
@@ -413,7 +682,6 @@
     <footer>
         <div class="container">
             <p>© 2026 Vrushali Kanavadey · Assistant Professor · AISSMS COE Pune</p>
-            
         </div>
     </footer>
 

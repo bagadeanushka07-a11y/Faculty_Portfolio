@@ -2,7 +2,6 @@
     "use strict";
 
     // ===== SCROLL TO SECTION FUNCTION =====
-    // Make it globally available for onclick handlers
     window.scrollToSection = function(sectionId) {
         const targetElement = document.getElementById(sectionId);
         if (targetElement) {
@@ -191,9 +190,9 @@
 
     // EmailJS Configuration - REPLACE WITH YOUR ACTUAL CREDENTIALS
     const EMAILJS_CONFIG = {
-        PUBLIC_KEY: 'LFw0Nsj2yV4EdFP3a',
-        SERVICE_ID: 'service_bdlh4wd',
-        TEMPLATE_ID: 'template_3jarndd'
+        PUBLIC_KEY: 'LFw0Nsj2yV4EdFP3a',          // Your actual public key
+        SERVICE_ID: 'service_bdlh4wd',            // Your actual service ID
+        TEMPLATE_ID: 'template_3jarndd'           // Your actual template ID
     };
 
     // Load EmailJS library
